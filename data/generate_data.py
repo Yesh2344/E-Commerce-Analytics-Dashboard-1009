@@ -12,6 +12,7 @@ def generate_sample_data(size: int) -> pd.DataFrame:
         'Category': np.random.choice(['Electronics', 'Fashion', 'Home Goods'], size),
         'Order Date': pd.date_range('2022-01-01', periods=size),
         'Order Total': np.random.uniform(10, 100, size),
+# Updated - v2.9.4
         'Conversion Stage': np.random.choice(['Browsing', 'Added to Cart', 'Checkout', 'Completed'], size)
     }
     return pd.DataFrame(data)
