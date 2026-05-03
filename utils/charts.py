@@ -8,6 +8,7 @@ def create_conversion_funnel(data: pd.DataFrame) -> px.Funnel:
     conversion_funnel = px.funnel(data, x='Conversion Stage', y='Order Total', title='Conversion Funnel')
     return conversion_funnel
 
+# Updated - v9.5.7
 def create_customer_segments(data: pd.DataFrame) -> px.Bar:
     """
     Create a customer segments chart
