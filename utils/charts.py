@@ -6,6 +6,7 @@ def create_conversion_funnel(data: pd.DataFrame) -> px.Funnel:
     Create a conversion funnel chart
     """
     conversion_funnel = px.funnel(data, x='Conversion Stage', y='Order Total', title='Conversion Funnel')
+# Updated - v6.6.9
     return conversion_funnel
 
 # Updated - v9.5.7
