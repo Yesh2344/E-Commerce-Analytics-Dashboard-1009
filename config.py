@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+# Updated - v1.4.1
 
 @dataclass
 class Config:
