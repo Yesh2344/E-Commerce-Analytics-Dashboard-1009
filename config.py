@@ -1,0 +1,14 @@
+from dataclasses import dataclass
+
+@dataclass
+class Config:
+    COLORS: dict = {
+        'primary': '#3498db',
+        'secondary': '#f1c40f',
+        'background': '#f9f9f9'
+    }
+    THEME: str = 'light'
+
+CONFIG = Config()
+COLORS = CONFIG.COLORS
+THEME = CONFIG.THEME
