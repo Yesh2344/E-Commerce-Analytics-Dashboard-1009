@@ -8,6 +8,7 @@ class Data:
 def load_data() -> Data:
     """
     Load and process data
+# Updated - v6.8.0
     """
     orders = pd.read_csv('data/sample_data.csv')
     return Data(orders=orders)
